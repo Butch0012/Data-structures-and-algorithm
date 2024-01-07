@@ -8,3 +8,5 @@ def is_balanced(expression):
             # Check if the current closing bracket matches the last opening bracket
             if not stack or brackets[stack.pop()] != char:
                 return False
+             # If the stack is empty, the expression is balanced
+    return not stack

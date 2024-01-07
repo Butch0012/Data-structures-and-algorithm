@@ -13,5 +13,6 @@ def word_frequency(sentence):
     for word in words:
         # Update the frequency of each word in the dictionary
         frequency_dict[word] = frequency_dict.get(word, 0) + 1
-
+# Return the final word frequency dictionary
+    return frequency_dict
     

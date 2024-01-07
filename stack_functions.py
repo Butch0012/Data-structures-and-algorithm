@@ -5,3 +5,6 @@ def is_balanced(expression):
         if char in brackets.keys():
             stack.append(char)
         elif char in brackets.values():
+            # Check if the current closing bracket matches the last opening bracket
+            if not stack or brackets[stack.pop()] != char:
+                return False
